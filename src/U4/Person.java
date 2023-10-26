@@ -10,15 +10,15 @@ public class Person {
 
     int Alter, Persnalnumer;
 
-    public Person (String Nachname, String Vorname, int Alter, int Personalnumer){
+    public Person(String Nachname, String Vorname, int Alter) {
         this.Nachname = Nachname;
         this.Vorname = Vorname;
         this.Alter = Alter;
-        this.Persnalnumer = Personalnumer;
+        this.Persnalnumer = ++Gesamtzahl;
     }
 
     @Override
     public String toString() {
-        return Vorname +  " " + Nachname+ " , " + Alter + " Jahre, persNr. " + Persnalnumer;
+        return Vorname + " " + Nachname + " , " + Alter + " Jahre, persNr. " + Persnalnumer;
     }
 }
