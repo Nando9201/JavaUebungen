@@ -8,17 +8,17 @@ public class Person {
         return Alter;
     }
 
-    int Alter, Persnalnumer;
+    int Alter, Personalnummer;
 
     public Person(String Nachname, String Vorname, int Alter) {
         this.Nachname = Nachname;
         this.Vorname = Vorname;
         this.Alter = Alter;
-        this.Persnalnumer = ++Gesamtzahl;
+        this.Personalnummer = ++Gesamtzahl;
     }
 
     @Override
     public String toString() {
-        return Vorname + " " + Nachname + " , " + Alter + " Jahre, persNr. " + Persnalnumer;
+        return Vorname + " " + Nachname + " , " + Alter + " Jahre, persNr. " + Personalnummer;
     }
 }
