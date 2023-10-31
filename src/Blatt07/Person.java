@@ -1,4 +1,4 @@
-package U4;
+package Blatt07;
 
 public class Person {
     public static int Gesamtzahl = 0;
