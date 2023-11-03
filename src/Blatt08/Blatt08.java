@@ -100,19 +100,15 @@ public class Blatt08 {
         if (a.nenner < 0) a.nenner = a.nenner * -1;
         if (a.zaehler < 0) a.zaehler = a.zaehler * -1;
 
-        for (int i = 2; i <= a.nenner; i++) {
-            if (a.zaehler % i == 0) {
-                a.zaehler = a.zaehler / i;
-                a.nenner = a.nenner / i;
-                break;
-            }
-        }
+        int kleinsterGemeinsamerTeiler = Aufgabe31(a.zaehler, a.nenner);
 
+        a.nenner = a.nenner / kleinsterGemeinsamerTeiler;
+        a.zaehler = a.zaehler / kleinsterGemeinsamerTeiler;
 
     }
 
     public Bruchzahl mul(Bruchzahl a, Bruchzahl b) {
-        return new Bruchzahl(a.zaehler * b.zaehler, a.nenner * a.nenner);
+        return new Bruchzahl(a.zaehler * b.zaehler, a.nenner * b.nenner);
     }
 
     public Bruchzahl div(Bruchzahl a, Bruchzahl b) {
