@@ -51,7 +51,7 @@ public class Blatt08 {
         System.out.println(counter + " Durchläufe");
     }
 
-    public int Aufgabe31(int a, int b) {
+    public static int Aufgabe31(int a, int b) {
         if (a == 0) return b;
         if (b == a) return a;
 
