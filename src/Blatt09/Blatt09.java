@@ -7,13 +7,12 @@ public class Blatt09 {
     public void Aufgabe35(){
         CD test = new CD(
                 IOTools.readString("Titel: "),
-                IOTools.readInt("Dauer"),
+                IOTools.readInt("Dauer: "),
                 IOTools.readBoolean("Ausgeliehen: ")
         );
 
         System.out.println(test.toString());
     }
-
 
     public void Aufgabe36(){
         int lenght = IOTools.readInt("Wie viele CDs: ");
@@ -22,4 +21,5 @@ public class Blatt09 {
         Party.sortieren(cdf);
         Party.vorhandeneAusgeben(cdf);
     }
+
 }
