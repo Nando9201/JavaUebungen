@@ -1,15 +1,11 @@
-import Blatt08.Blatt08;
-import Blatt08.Bruchzahl;
+import Blatt09.Blatt09;
 
 public class Main {
     public static void main(String[] args) {
 
-        Blatt08 aufgabe = new Blatt08();
-        Bruchzahl a = new Bruchzahl(1,2);
-        Bruchzahl b = new Bruchzahl(1,4);
+        Blatt09 aufgabe = new Blatt09();
 
-        aufgabe.ausgeben(aufgabe.mul(a,b));
-        aufgabe.ausgeben(aufgabe.div(a,b));
+        aufgabe.Aufgabe36();
 
 
 
