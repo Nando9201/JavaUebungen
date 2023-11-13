@@ -1,16 +1,12 @@
-import Blatt09.Blatt09;
-
 public class Main {
     public static void main(String[] args) {
 
-        Blatt09 aufgabe = new Blatt09();
+        StringBuffer s = new StringBuffer("start");
 
-        aufgabe.Aufgabe36();
-
+        System.out.println(s.append("s").insert(4, "le"));
 
 
     }
 
 
-    
 }
