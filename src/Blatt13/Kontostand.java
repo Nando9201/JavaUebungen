@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Kontostand extends Zahl{
 
-    private double wert;
+    private final double wert;
 
     public Kontostand (double stand){
         this.wert = stand;
