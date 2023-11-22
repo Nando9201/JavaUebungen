@@ -1,9 +1,16 @@
+import Blatt15.Berechne;
+import Prog1Tools.IOTools;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-        StringBuffer s = new StringBuffer("start");
+        Berechne b = new Berechne();
 
-        System.out.println(s.append("s").insert(4, "le"));
+        String Operation = IOTools.readString("operation: ");
+        String Wert = IOTools.readString("wert: ");
+
+        System.out.println(b.rechnung(Operation, Wert));
+
 
 
     }
